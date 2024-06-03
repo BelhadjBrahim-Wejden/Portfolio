@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.f0b17dd7.css",
-    "main.js": "/Portfolio/static/js/main.b2fe782f.js",
-    "static/js/415.4d6acbeb.chunk.js": "/Portfolio/static/js/415.4d6acbeb.chunk.js",
-    "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "main.js": "/Portfolio/static/js/main.b7ef295a.js",
+    "static/js/770.b9d73e01.chunk.js": "/Portfolio/static/js/770.b9d73e01.chunk.js",
+    "static/js/453.ace21015.chunk.js": "/Portfolio/static/js/453.ace21015.chunk.js",
     "static/media/clickandcollect.PNG": "/Portfolio/static/media/clickandcollect.7d0f1e5d84524f6cf5e3.PNG",
-    "static/media/wejden-cv-2024-en.pdf": "/Portfolio/static/media/wejden-cv-2024-en.ef4f2be44ad296d6080e.pdf",
     "static/media/settings.jpg": "/Portfolio/static/media/settings.1a8cf63f7923565fce52.jpg",
     "static/media/homeimage.PNG": "/Portfolio/static/media/homeimage.521c254de4c6af004b05.PNG",
-    "static/media/about.png": "/Portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/wejden-cv-2024-en.pdf": "/Portfolio/static/media/wejden-cv-2024-en.2b965e70ba5aff69ab28.pdf",
     "static/media/ui.PNG": "/Portfolio/static/media/ui.a20d98a87e75ea7fd00f.PNG",
+    "static/media/about1.png": "/Portfolio/static/media/about1.ac587c9399ea5b5d78a6.png",
     "static/media/women.PNG": "/Portfolio/static/media/women.b4d57b3c0c94e31639da.PNG",
     "static/media/home-bg.jpg": "/Portfolio/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
     "static/media/pre.svg": "/Portfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/Portfolio/index.html",
     "main.f0b17dd7.css.map": "/Portfolio/static/css/main.f0b17dd7.css.map",
-    "main.b2fe782f.js.map": "/Portfolio/static/js/main.b2fe782f.js.map",
-    "415.4d6acbeb.chunk.js.map": "/Portfolio/static/js/415.4d6acbeb.chunk.js.map",
-    "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.b7ef295a.js.map": "/Portfolio/static/js/main.b7ef295a.js.map",
+    "770.b9d73e01.chunk.js.map": "/Portfolio/static/js/770.b9d73e01.chunk.js.map",
+    "453.ace21015.chunk.js.map": "/Portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f0b17dd7.css",
-    "static/js/main.b2fe782f.js"
+    "static/js/main.b7ef295a.js"
   ]
 }

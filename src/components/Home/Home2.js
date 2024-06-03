@@ -4,37 +4,44 @@ import women from "../../Assets/women.PNG";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function Home2() {
+  const { t } = useTranslation();
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              {t("LET ME")} <span className="purple"> {t("INTRODUCE")} </span>{" "}
+              {t("MYSELF")}
             </h1>
             <p className="home-about-body">
-              A passionate Full Stack Web Developer having an experience of
-              building Web applications with JavaScript / Reactjs / Nodejs and
-              some other cool libraries and frameworks 🤷‍♂️
+              {t(
+                "A passionate Full Stack Web Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks"
+              )}
+              🤷‍♂️
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              {t("My field of Interest's are building new")} &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b>
+                <b className="purple">{t("Web Technologies and Products")} </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Nest.js</b> and
+              {t(
+                "Whenever possible, I also apply my passion for developing products with"
+              )}
+              <b className="purple">Nest.js</b> {t("and")}
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Javascript Library and Frameworks
+                  {t("Modern Javascript Library and Frameworks")}
                 </b>
               </i>
-              &nbsp; like
+              &nbsp; {t("like")}
               <i>
                 <b className="purple">Next.js</b>
               </i>
@@ -48,9 +55,9 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1>{t("FIND ME ON")}</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              {t("Feel free to")} <span className="purple">{t("connect with me")}</span>
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">

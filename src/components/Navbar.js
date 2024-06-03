@@ -6,17 +6,20 @@ import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 
 import { CgFileDocument } from "react-icons/cg";
+import LanguageDropdown from "./LanguageDropdown";
 
 function NavBar() {
+  const { t } = useTranslation();
+
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -61,7 +64,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> {t("Home")}
               </Nav.Link>
             </Nav.Item>
 
@@ -71,7 +74,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t("About")}
               </Nav.Link>
             </Nav.Item>
 
@@ -84,7 +87,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                {t("Projects")}
               </Nav.Link>
             </Nav.Item>
 
@@ -94,7 +97,7 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} /> {t("Resume")}
               </Nav.Link>
             </Nav.Item>
             <Nav.Item className="fork-btn">
@@ -106,6 +109,9 @@ function NavBar() {
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
+            </Nav.Item>
+            <Nav.Item>
+              <LanguageDropdown />
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

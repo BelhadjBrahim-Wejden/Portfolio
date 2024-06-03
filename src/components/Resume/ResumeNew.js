@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
+import { useTranslation } from "react-i18next";
+
 import Particle from "../Particle";
 import pdf from "../../Assets/../Assets/wejden-cv-2024-en.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
@@ -10,6 +12,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
+  const { t } = useTranslation();
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -30,7 +33,7 @@ function ResumeNew() {
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;{t("Download Resume")}
           </Button>
         </Row>
       </Container>
